@@ -59,16 +59,46 @@ section:nth-child(1)>main>section:nth-child(1)>#My-name{
   font-size: 80px;
   position: absolute;
   left: 50px;
-  top: 240px;
+  top: 250px;
   font-weight: bold;
 
-
 }
+
 section:nth-child(1)>main>section:nth-child(1)>#i-am-Developer{
   font-size: 50px;
   position: absolute;
-  top: 400px;
+  font-weight: bold;
+  font-style: italic;
+  top: 430px;
 }
+#A{
+  font-size: 70px;
+}
+#I{
+  font-size: 70px;
+}
+#D{
+  font-size: 70px;
+}
+#developer{
+  color: #11E4E4;
+}
+#D2{
+  font-size: 70px;
+}
+#developer2{
+  color: #11E4E4;
+}
+#P{
+  font-size: 70px;
+}
+#S{
+  font-size: 70px;
+}
+#W{
+  font-size: 70px;
+}
+
 
 section:nth-child(1)>main>section:nth-child(1)>#Download-Cv{
   background-color: #11E4E4;

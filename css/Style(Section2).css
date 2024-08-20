@@ -1,0 +1,22 @@
+#S7-Service {
+    background: black;
+    position: relative;
+    width: 90%;
+    height: 1000px;
+    margin: 0 auto;
+    left: 100px;
+
+
+}
+
+#S7-Service>header>#Vision{
+    position: relative;
+    right: 100px;
+    font-size: 50px;
+    top: 20px;
+    left: 690px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+
+}

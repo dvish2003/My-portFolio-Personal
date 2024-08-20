@@ -1,44 +1,82 @@
 *{
-  font-family: Inder;
+  font-family: 'Inder', sans-serif;
+
 }
 .hero{
   color: white;
   background: black;
 }
 /*Section 1*/
-#S1-HomePage{
+#S1-HomePage {
   background: black;
   position: relative;
   width: 90%;
-  height: 100%;
-  left: 90px;
+  height: 690px;
+  left: 80px;
+  margin: 0 auto;
 }
+
 #My-Profile-Photo{
   position: absolute;
   border-radius: 30px;
   top: 100px;
   right: 80px;
 }
-section:nth-child(1)>header>div{
-  font-size: 20px;
+section:nth-child(1) > header {
   position: fixed;
-  left: 100px;
-  font-weight: bold;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 20px 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-section:nth-child(1)>header>nav{
+
+section:nth-child(1) > header > div {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  left: 100px;
+}
+
+section:nth-child(1) > header > nav {
+  position: relative;
+  left: 180px;
   font-size: 20px;
   display: flex;
-  width: 84%;
-  margin: auto;
-  padding: 20px 0;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 84%;
 }
-nav ul li{
-  display: inline-block;
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav ul li {
   list-style: none;
-  margin: 10px 20px;
+  margin: 0 20px;
 }
+
+nav ul li a {
+  text-decoration: none;
+  color: #cccccc;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #11E4E4;
+}
+
 
 nav ul li a{
   text-decoration: none;
@@ -51,6 +89,7 @@ nav ul li a:hover{
 section:nth-child(1)>main>section:nth-child(1)>#Hello-Word{
   font-size: 80px;
   position: relative;
+  top: 130px;
   font-family: 'Inder', sans-serif;
   font-weight: normal;
   font-style: italic;
@@ -58,18 +97,24 @@ section:nth-child(1)>main>section:nth-child(1)>#Hello-Word{
 section:nth-child(1)>main>section:nth-child(1)>#My-name{
   font-size: 80px;
   position: absolute;
-  left: 50px;
-  top: 250px;
+  left: 250px;
+  top: 140px;
   font-weight: bold;
-
 }
+
+#-id{
+  font-size: 150px;
+  font-weight: lighter;
+ }
+
 
 section:nth-child(1)>main>section:nth-child(1)>#i-am-Developer{
   font-size: 50px;
   position: absolute;
   font-weight: bold;
   font-style: italic;
-  top: 430px;
+  top: 400px;
+
 }
 #A{
   font-size: 70px;
@@ -113,10 +158,11 @@ section:nth-child(1)>main>section:nth-child(1)>#Download-Cv{
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
-  top: 650px;
+  top: 550px;
 }
 section:nth-child(1)>main>section:nth-child(1)>#Download-Cv1{
   background-color: #11E4E4;
+  filter: blur(10px);
   height: 65px;
   width: 200px;
   color: #fff;
@@ -128,8 +174,7 @@ section:nth-child(1)>main>section:nth-child(1)>#Download-Cv1{
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
-  top: 650px;
-  filter: blur(10px);
+  top: 550px;
 }
 section:nth-child(1)>main>section:nth-child(1)>#Download-Cv:hover {
   background-color: white;

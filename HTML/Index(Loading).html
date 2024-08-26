@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Collection with Animation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .gallery img:active {
+      transform: scale(1);
+      box-shadow: none;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .gallery img {
+      animation: fadeIn 1s ease forwards;
+    }
+  </style>
+</head>
+<body>
+<div class="gallery">
+  <img src="https://via.placeholder.com/200x200" alt="Photo 1">
+  <img src="https://via.placeholder.com/200x200" alt="Photo 2">
+  <img src="https://via.placeholder.com/200x200" alt="Photo 3">
+  <img src="https://via.placeholder.com/200x200" alt="Photo 4">
+  <img src="https://via.placeholder.com/200x200" alt="Photo 5">
+</div>
+</body>
+</html>

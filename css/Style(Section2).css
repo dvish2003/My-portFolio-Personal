@@ -1,0 +1,179 @@
+
+#S2-About-Me {
+  background: black;
+  color: white;
+  position: relative;
+  width: 90%;
+  height: 90vh;
+  left: 12vh;
+  top: -6vh;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  height: 700px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card_2{
+  width: 80px;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,0.99);
+  position: relative;
+  top: -70px;
+  left: -360px;
+}
+.card_2> .row{
+  color: white;
+  display: flex;
+  flex-wrap: nowrap
+}
+.card_2> .row> .icon{
+  background: #223;
+  color:white ;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  position: relative;
+  top: -10px;
+}
+input{
+  display: none;
+}
+input:checked + label{
+  width: 600px;
+}
+input:checked + label .description{
+opacity: 1 !important;
+transform: translateY(0) !important;
+}
+ .card_2[for="c1"]{
+background-image: url('/Asset/Image/IMG_E0089.JPG');
+ }
+
+.card_2> .row> .description{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 450px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(1vh);
+  z-index: 10;
+  border-radius: 10px;
+  transform: translateY(30px);
+  transition: all .3s ease;
+  position: relative;
+  top: -10px;
+}
+.card_2> .row> .description:hover{
+  font-size: 30px;
+}
+.description p:hover{
+  font-size: 19px;
+}
+
+
+.description p{
+  left: 8px;
+  color: white;
+  height: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 5px;
+  position: relative;
+  bottom: 30px;
+  border-radius: 2rem;
+}
+.description h4{
+  text-transform: uppercase;
+}
+
+
+.underline-animation {
+  font-size: 3.2vh;
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2vh;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease-in-out; /* Reduced time to 0.15s */
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.underline-animation:hover {
+  color: white;
+}
+
+
+
+#S2-About-Me > main > #About-Me-Section > #Detail {
+  background: gray;
+  height: 42.4vh;
+  width: 58vh;
+  padding: 2.3vh 4.1vh;
+  position: absolute;
+  right: 0;
+  top: 9vh;
+  font-size: 3.5vh;
+}
+
+
+
+#S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(1) {
+  position: absolute;
+  top: 0;
+  transition: transform 0.5s;
+}
+
+S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(1):hover {
+transform: translateY(-10px);
+}
+
+
+
+#S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(2):hover {
+  transform: translateY(-10px);
+}
+#S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(2){
+  position: absolute;
+  top: 25vh;
+  transition: transform 0.5s;
+
+}
+

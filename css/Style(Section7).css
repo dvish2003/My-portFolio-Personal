@@ -1,0 +1,243 @@
+#S7-Service {
+    background: black;
+    border-radius: 3.5vh;
+    position: relative;
+    width: 92%;
+    height: 90vh;
+    left: 7vh;
+}
+
+#S7-Service > header > #Vision {
+    font-size: 5.8vh;
+    position: absolute;
+    right: 11.6vh;
+    top: 6.7vh;
+    left: 67.4vh;
+    transform: translateX(6%);
+    margin: 0 auto;
+    border-bottom: 0.2vh solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 27vh;
+    padding: 0 2.3vh;
+}
+
+/*.box{
+  display: inline-block;
+  position: relative;
+  top: 25vh;
+  left: 2.5vh;
+  padding: 2vh 4vh;
+
+}*/
+
+.box:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 46.5vh;
+    position: absolute;
+    left: 4vh;
+    top: 27vh;
+}
+
+.box:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 46.5vh;
+    position: absolute;
+    left: 130.5vh;
+    top: 27vh;
+}
+
+.box:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 46.5vh;
+    position: absolute;
+    top: 40.7vh;
+    left: 67.3vh;
+}
+
+
+.card {
+    height: 42.4vh;
+    width: 39vh;
+    padding: 2.3vh 4.1vh;
+    border-radius: 2.3vh;
+    margin: 1.7vh;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 2.3vh rgba(255, 255, 255, 0.5);
+    border: 0.2vh solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(1vh);
+    z-index: -0;
+
+}
+
+h5 {
+    position: absolute;
+    top: 3.5vh;
+    left: 9.3vh;
+    color: black;
+    font-size: 2.7vh;
+    margin-bottom: 1.7vh;
+}
+
+.pra {
+    position: absolute;
+    top: 11.6vh;
+    left: 1.2vh;
+    color: black;
+    font-size: 1.8vh;
+    line-height: 3.1vh;
+    margin-bottom: 2.9vh;
+}
+
+.card .button {
+    background: #11E4E4;
+    color: black;
+    text-decoration: none;
+    border: 0.2vh solid transparent;
+    font-weight: bold;
+    padding: 1vh 2.5vh;
+    border-radius: 3.5vh;
+    transition: .4s;
+}
+
+.card .button:hover {
+    background: transparent;
+    border: 0.2vh solid black;
+    cursor: pointer;
+    color: black;
+}
+
+#S7-Service > main > section > #Software-Development {
+    position: relative;
+    width: 34.9vh;
+    height: 46.5vh;
+    left: 0;
+    top: 8.1vh;
+    padding: 2.3vh 11.6vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 0.2vh solid rgba(255, 255, 255, 0.2);
+}
+
+#S7-Service > main > section > #Software-Development > header {
+    font-size: 3.5vh;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+}
+
+#S7-Service > main > section > #Software-Development > p {
+    font-size: 2.9vh;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 5.8vh;
+}
+
+#S7-Service > main > section > #Software-Development > a {
+    font-size: 2.3vh;
+    position: absolute;
+    bottom: 5vh;
+    left: 23.2vh;
+    color: #888888;
+}
+
+#S7-Service > main > section > #Software-Development > a:hover {
+    color: #11E4E4;
+}
+
+#S7-Service > main > section > #Specialized-Services {
+    position: relative;
+    width: 34.9vh;
+    height: 46.5vh;
+    left: 141.1vh;
+    bottom: 43.3vh;
+    padding: 2.3vh 11.6vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 0.2vh solid rgba(255, 255, 255, 0.2);
+}
+
+#S7-Service > main > section > #Specialized-Services > header {
+    font-size: 3.5vh;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+}
+
+#S7-Service > main > section > #Specialized-Services > p {
+    font-size: 2.9vh;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 5.8vh;
+}
+
+#S7-Service > main > section > #Specialized-Services > a {
+    font-size: 2.3vh;
+    position: absolute;
+    bottom: 15.1vh;
+    left: 23.2vh;
+    color: #888888;
+}
+
+#S7-Service > main > section > #Specialized-Services > a:hover {
+    color: #11E4E4;
+}
+
+#S7-Service > main > section > #Project-Based-Services {
+    position: relative;
+    left: 70.9vh;
+    bottom: 69.8vh;
+    width: 34.9vh;
+    height: 51.1vh;
+    padding: 2.3vh 11.6vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 0.2vh solid rgba(255, 255, 255, 0.2);
+}
+
+#S7-Service > main > section > #Project-Based-Services > header {
+    font-size: 3.5vh;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+}
+
+#S7-Service > main > section > #Project-Based-Services > p {
+    font-size: 2.9vh;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 5.8vh;
+}
+
+#S7-Service > main > section > #Project-Based-Services > a {
+    font-size: 2.3vh;
+    position: absolute;
+    bottom: 1.7vh;
+    left: 23.2vh;
+    color: #888888;
+}
+
+#S7-Service > main > section > #Project-Based-Services > a:hover {
+    color: #11E4E4;
+}

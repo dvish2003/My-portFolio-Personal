@@ -9,17 +9,40 @@
   <link rel="Icon" type="image/x-icon" href="../Asset/Image/V%20Shan.png">
   <title>shan Chathuranga | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+   <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+ -->
 
+  <link rel="stylesheet" href="../file/normalize.css">
 
-  <!--<link rel="stylesheet" href="../../Samsung%20Demo/css/Style(Section1).css">
-  <link rel="stylesheet" href="../../Samsung%20Demo/css/Style(Section7).css">
-  <link rel="stylesheet" href="../../Samsung%20Demo/css/Style(Section2).css">-->
+  <link rel="stylesheet" href="../../css/Style(Section1).css">
+  <link rel="stylesheet" href="../../css/Style(Section7).css">
+  <link rel="stylesheet" href="../../css/Style(Section2).css">
+  <style>
+    .card_2[for="c1"] {
+      background-image: url("../Asset/Image/V6.png");
+    }
 
+    .card_2[for="c2"] {
+
+      background-image: url("../Asset/Image/MKQSE7497.JPG");
+    }
+
+    .card_2[for="c3"] {
+      background-image: url("../Asset/Image/EQNZ5190.JPG");
+    }
+
+    .card_2[for="c4"] {
+      background-image: url("../Asset/Image/DSYO7145.JPG");
+    }
+
+    .card_2[for="c5"] {
+      background-image: url("../Asset/Image/DXCD0747.JPG");
+    }
+  </style>
 
 </head>
 <body class="hero">
@@ -53,8 +76,8 @@
       <h1 id="My-name"><i>D Vishan Chathuranga </i><span id="-id">|</span></h1>
       <h2 id="i-am-Developer">And I am passionate <span id="developer">Software Developer</span> / <span
         id="developer2">Web Developer</span></h2>
-      <button id="Download-Cv1">Download Cv</button>
       <button id="Download-Cv">Download CV</button>
+
     </section>
 
 
@@ -75,7 +98,7 @@
     <section>
       <div class="box">
         <div class="card">
-          <img src="../Asset/Image/more.png" width="40" height="40">
+          <img src="../Asset/Image/more.png" style="width: 2vw; height: auto;">
           <h5><u>Software Development</u></h5>
           <div class="pra">
             <p>
@@ -90,7 +113,7 @@
       </div>
       <div class="box">
         <div class="card">
-          <img src="../Asset/Image/user%20(1).png" width="40" height="40">
+          <img src="../Asset/Image/user%20(1).png" style="width: 2vw; height: auto;">
           <h5><u>Specialized Services</u></h5>
           <div class="pra">
             <p>
@@ -104,7 +127,7 @@
       </div>
       <div class="box">
         <div id="card" class="card">
-          <img src="../Asset/Image/bell.png" width="40" height="40">
+          <img src="../Asset/Image/bell.png" style="width: 2vw; height: auto;">
           <h5><u> Project-Based Services</u></h5>
           <div class="pra">
             <p>
@@ -126,26 +149,85 @@
 
 <!--About me section-->
 <br><br><br><br><br><br>
-<section id="S2 About Me">
+<section id="S2-About-Me">
   <main>
-    <section id="About Me Section">
+    <section id="About-Me-Section">
 
       <br>
       <!--My Photo-->
-      <div>
-        <img src="../Asset/Image/V5.png"  width="400" height="500">
-        <img src="../Asset/Image/V7.png"  width="400" height="500">
-        <img src="../Asset/Image/V10.png" width="400" height="500">
-        <img src="../Asset/Image/V4.png"  width="400" height="500">
+      <div class="wrapper">
+        <div class="container">
+          <input type="radio" name="slide" id="c1">
+          <label for="c1" class="card_2">
+            <!--   <img  src="../Asset/Image/MKQSE7497.JPG" width="1000" height="800">-->
+            <div class="row">
+              <div class="icon">1</div>
+              <div class="description">
+                <p>Success thrives on creativity. Embrace every challenge as an opportunity to innovate, and let your
+                  ideas lead you to victory</p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="c2" checked>
+          <label for="c2" class="card_2">
+            <!--   <img  src="../Asset/Image/V6.png" width="1000" height="800">-->
+            <div class="row">
+              <div class="icon">2</div>
+              <div class="description">
+                <p>Winners don't just achieve—they inspire. Tap into your creativity to unlock endless possibilities and
+                  make your mark on the world.</p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="c3">
+          <label for="c3" class="card_2">
+            <!--   <img  src="../Asset/Image/V9.png" width="1000" height="800">-->
+            <div class="row">
+              <div class="icon">3</div>
+              <div class="description">
+                <p>Creativity fuels progress. The more you explore your potential, the more you realize that greatness
+                  is within your grasp.</p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="c4">
+          <label for="c4" class="card_2">
+            <!--<img  src="../Asset/Image/DSYO7145.JPG" width="1000" height="800">-->
+            <div class="row">
+              <div class="icon">4</div>
+              <div class="description">
+                <p>True success is a blend of hard work and creative thinking. Let your imagination guide you to
+                  extraordinary outcomes.</p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="c5">
+          <label for="c5" class="card_2">
+            <!--<img  src="../Asset/Image/DSYO7145.JPG" width="1000" height="800">-->
+            <div class="row">
+              <div class="icon">5</div>
+              <div class="description">
+                <p>In every challenge lies an opportunity to innovate. Winners see beyond obstacles, using creativity to
+                  transform visions into reality.</p>
+              </div>
+            </div>
+          </label>
+        </div>
       </div>
       <!--My introduction-->
-      <div>
+      <div id="Detail">
         <p>
-          I am a software engineering student pursuing Higher National Diploma in Software Engineering at <strong>IJSE-Institute
+          I am a software engineering student pursuing Higher National Diploma in Software Engineering at <strong
+          class="underline-animation">IJSE-Institute
           of Software Engineering</strong>
         </p>
         <p>
-          Passionate about technology and eager to apply my skills to real-world challenges.
+          🤘Passionate about technology and eager to apply my skills to real-world challenges.🤠
+
         </p>
 
       </div>
@@ -393,12 +475,10 @@
 
   </main>
 </section>
-<!--
-End of the web Page
-<section id="Last Page">
-  <main>
-
-  </main>
-</section>-->
+<footer>
+  <div>
+    Developed by Vishan Chathuranga
+  </div>
+</footer>
 </body>
 </html>

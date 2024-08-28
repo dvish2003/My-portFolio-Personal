@@ -1,6 +1,6 @@
 
 #S2-About-Me {
-  background: black;
+  background: pink;
   color: white;
   position: relative;
   width: 90%;
@@ -18,26 +18,26 @@
 }
 
 .container{
-  height: 700px;
+  height: 70vh;
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
 }
 
 .card_2{
-  width: 80px;
+  width: 8vh;
   border-radius: .75rem;
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
   border-radius: 2rem;
-  margin: 0 10px;
+  margin: 0 1vh;
   display: flex;
   align-items: flex-end;
   transition: .6s cubic-bezier(.28,-0.03,0,0.99);
   position: relative;
-  top: -70px;
-  left: -360px;
+  top: -7vh;
+  left: -39.8vh;
 }
 .card_2> .row{
   color: white;
@@ -48,62 +48,78 @@
   background: #223;
   color:white ;
   border-radius: 50%;
-  width: 50px;
+  width: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 1.5vh;
   position: relative;
-  top: -10px;
+  top: -1vh;
 }
 input{
   display: none;
 }
 input:checked + label{
-  width: 600px;
+  width: 60vh;
 }
 input:checked + label .description{
 opacity: 1 !important;
 transform: translateY(0) !important;
 }
- .card_2[for="c1"]{
-background-image: url('/Asset/Image/IMG_E0089.JPG');
- }
 
 .card_2> .row> .description{
   justify-content: center;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 80px;
-  width: 450px;
+  height: 8vh;
+  width: 45vh;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(1vh);
   z-index: 10;
-  border-radius: 10px;
-  transform: translateY(30px);
+  border-radius: 1vh;
+  transform: translateY(3vh);
   transition: all .3s ease;
   position: relative;
-  top: -10px;
+  top: -1.1vh;
 }
 .card_2> .row> .description:hover{
-  font-size: 30px;
+  font-size: 3vh;
 }
 .description p:hover{
-  font-size: 19px;
+  font-size: 1.9vh;
+}
+.card_2[for="c1"] {
+  background-image: url("../Asset/Image/V6.png");
 }
 
+.card_2[for="c2"] {
+
+  background-image: url("../Asset/Image/MKQSE7497.JPG");
+}
+
+.card_2[for="c3"] {
+  background-image: url("../Asset/Image/EQNZ5190.JPG");
+}
+
+.card_2[for="c4"] {
+  background-image: url("../Asset/Image/DSYO7145.JPG");
+}
+
+.card_2[for="c5"] {
+  background-image: url("../Asset/Image/DXCD0747.JPG");
+}
 
 .description p{
-  left: 8px;
+  left: 0.8vh;
   color: white;
-  height: 10px;
+  height: 1vh;
   font-weight: bold;
-  font-size: 18px;
-  padding-top: 5px;
+  font-size: 1.8vh;
+  padding-top: 0.5vh;
   position: relative;
-  bottom: 30px;
+  bottom: 3vh;
   border-radius: 2rem;
 }
 .description h4{
@@ -112,8 +128,7 @@ background-image: url('/Asset/Image/IMG_E0089.JPG');
 
 
 .underline-animation {
-  font-size: 3.2vh;
-  position: relative;
+  font-size: 2.9vh;
   display: inline-block;
   color: white;
 }
@@ -128,7 +143,191 @@ background-image: url('/Asset/Image/IMG_E0089.JPG');
   background-color: white;
   transform: scaleX(0);
   transform-origin: bottom right;
-  transition: transform 0.15s ease-in-out; /* Reduced time to 0.15s */
+  transition: transform 0.15s ease-in-out;
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+#S2-About-Me > main > #About-Me-Section > #Detail {
+  background: #272727;
+  height: 64.4vh;
+  width: 58vh;
+  padding: 2.3vh 4.1vh;
+  position: absolute;
+  right: 0;
+  top: 10.1vh;
+  font-size: 2.8vh;
+}
+
+
+
+#S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(1) {
+  position: absolute;
+  top: 4vh;
+  transition: transform 0.5s;
+}
+
+S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(1):hover {
+transform: translateY(-10px);
+}
+
+
+#S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(2):hover {
+  transform: translateY(-10px);
+}
+
+
+#S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(2){
+  position: absolute;
+  top: 34vh;
+  transition: transform 0.5s;
+}
+
+
+
+/*#S2-About-Me {
+  background: black;
+  color: white;
+  position: relative;
+  width: 90%;
+  height: 90vh;
+  left: 11.11vh;
+  top: -6.00vh;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 64.81vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card_2 {
+  width: 7.41vh;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 1.85vh;
+  margin: 0 0.93vh;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,0.99);
+  position: relative;
+  top: -6.48vh;
+  left: -33.33vh;
+}
+
+.card_2 > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card_2 > .row > .icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 4.63vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.39vh;
+  position: relative;
+  top: -0.93vh;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 55.56vh;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card_2[for="c1"] {
+  background-image: url('/Asset/Image/IMG_E0089.JPG');
+}
+
+.card_2 > .row > .description {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 7.41vh;
+  width: 41.67vh;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(0.93vh);
+  z-index: 10;
+  border-radius: 0.93vh;
+  transform: translateY(2.78vh);
+  transition: all .3s ease;
+  position: relative;
+  top: -0.93vh;
+}
+
+.card_2 > .row > .description:hover {
+  font-size: 2.78vh;
+}
+
+.description p:hover {
+  font-size: 1.76vh;
+}
+
+.description p {
+  left: 0.74vh;
+  color: white;
+  height: 0.93vh;
+  font-weight: bold;
+  font-size: 1.67vh;
+  padding-top: 0.46vh;
+  position: relative;
+  bottom: 2.78vh;
+  border-radius: 1.85vh;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+.underline-animation {
+  font-size: 3.2vh;
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.19vh;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease-in-out;
 }
 
 .underline-animation:hover::after {
@@ -139,8 +338,6 @@ background-image: url('/Asset/Image/IMG_E0089.JPG');
 .underline-animation:hover {
   color: white;
 }
-
-
 
 #S2-About-Me > main > #About-Me-Section > #Detail {
   background: gray;
@@ -153,27 +350,23 @@ background-image: url('/Asset/Image/IMG_E0089.JPG');
   font-size: 3.5vh;
 }
 
-
-
 #S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(1) {
   position: absolute;
   top: 0;
   transition: transform 0.5s;
 }
 
-S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(1):hover {
-transform: translateY(-10px);
+#S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(1):hover {
+  transform: translateY(-0.93vh);
 }
-
-
 
 #S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(2):hover {
-  transform: translateY(-10px);
+  transform: translateY(-0.93vh);
 }
-#S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(2){
+
+#S2-About-Me > main > #About-Me-Section > #Detail > p:nth-child(2) {
   position: absolute;
   top: 25vh;
   transition: transform 0.5s;
-
 }
-
+*/

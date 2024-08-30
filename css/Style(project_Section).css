@@ -1,6 +1,6 @@
 #S4-project {
-  background: gray;
-  color: white;
+  background: black;
+  color: black;
   position: relative;
   width: 90%;
   height: 90vh;
@@ -17,6 +17,9 @@
 .card_container{
   display: grid;
   row-gap: 3.5rem;
+  column-gap: 4rem;
+  position: relative;
+  top: -40vh;
 }
 
 .card_article{
@@ -24,16 +27,12 @@
   overflow: hidden;
 }
 
-.card_img{
-  width: 378px;
-  border-radius: 1.5rem;
-}
 
 .card_data{
-  width: 280px;
-  background-color: darkolivegreen;
+  width: 29vh;
+  background-color: white;
   padding: 1.5rem 2rem;
-  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  box-shadow: 0 8px 24px rgba(128, 128, 128, 0.5);
   border-radius: 1rem;
   position: absolute;
   bottom: -9rem;
@@ -41,26 +40,26 @@
   right: 0;
   margin-inline: auto;
   opacity: 0;
-transition: opacity 1s 1s;
+   transition: opacity 1s 1s;
 }
 
 .card_description{
   display: block;
-  font-size: 19px;
+  font-size: 1.9vh;
   margin-bottom: .25rem;
 }
 
 .card_title{
-  font-size: 24px;
+  font-size: 2.4vh;
   font-weight: 500;
-  color: white;
+  color: black;
   margin-bottom: .75rem;
 }
 .card_button{
-  font-size: 15px;
+  font-size: 1.5vh;
   text-decoration: none;
   font-weight: 500;
-  color: white;
+  color: black;
 }
 
 .card_button:hover{
@@ -128,7 +127,7 @@ to{
   }
 
   .card_data{
-    width: 250px;
+    width: 25vh;
     padding: 1rem;
   }
 }
@@ -145,10 +144,17 @@ to{
     grid-template-columns: repeat(3, 1fr);
   }
   .card_img {
-    width: 340px;
+    width: 74vh;
   }
   .card_data{
-    width: 316px;
+    width: 31.6vh;
     padding-inline: 2.5rem;
   }
 }
+.card_img{
+  width: 49.8vh;
+  height: 40vh;
+  border-radius: 1.5rem;
+}
+
+

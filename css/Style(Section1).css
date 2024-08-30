@@ -1,6 +1,5 @@
 *{
   font-family: Inder;
-
 }
 .hero{
   color: white;
@@ -63,20 +62,30 @@ nav ul li a {
   text-decoration: none;
   color: #cccccc;
   transition: color 0.3s ease;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a::after{
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: white;
+  scale: 1 0;
+  z-index: -1;
+  transition: 0.45s;
+  border-radius: 10px;
+
 }
 
 nav ul li a:hover {
-  color: #11E4E4;
+  color: black;
+}
+nav ul li a:hover::after{
+  scale: 1 1;
 }
 
 
-nav ul li a{
-  text-decoration: none;
-  color: #cccccc;
-}
-nav ul li a:hover{
-  color: #11E4E4;
-}
 
 section:nth-child(1)>main>section:nth-child(1)>#Hello-Word{
   font-size: 8vh;
@@ -97,7 +106,7 @@ section:nth-child(1)>main>section:nth-child(1)>#My-name{
 #-id{
   font-size: 15vh;
   font-weight: lighter;
- }
+}
 
 
 section:nth-child(1)>main>section:nth-child(1)>#i-am-Developer{

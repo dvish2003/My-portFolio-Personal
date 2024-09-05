@@ -13,6 +13,7 @@
 .About-Me-Section>div:nth-child(1){
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   gap: 7rem;
 }
 .About-Me-Section>div:nth-child(2) {

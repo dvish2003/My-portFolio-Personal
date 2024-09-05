@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <meta name="description" content="this is the description">
   <meta name="keywords" content="java, html, css, js, go, react, angular">
@@ -9,12 +10,8 @@
   <link rel="Icon" type="image/x-icon" href="../Asset/Image/V%20Shan.png">
   <title>shan Chathuranga | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-   <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
- -->
+
 
   <link rel="stylesheet" href="../file/normalize.css">
 
@@ -24,6 +21,21 @@
   <link rel="stylesheet" href="../css/Style(project_Section).css">
   <link rel="stylesheet" href="../css/Style(Tools).css">
 
+  <!--box_icons link-->
+        <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!--remix_icon link-->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <!--pop font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
 </head>
 <body class="hero">
 <section id="S1-HomePage">
@@ -31,39 +43,53 @@
   <header class="header">
     <!--Logo Section-->
     <div>
-      <h1 id="HeaderName">VISH</h1>
+      <h1 class="HeaderName">VISH</h1>
     </div>
 
     <!--Navigation Section-->
     <nav>
-      <ul>
+      <ul class="nav_list">
         <li><a href="">Home</a></li>
         <li><a href="#S7-Service">Services</a></li>
-        <li><a href="#S2-About-Me">About me</a></li>
+        <li><a href="#S2-About-Me">About</a></li>
         <li><a href="">Project</a></li>
-        <li><a href="">Work with us</a></li>
-        <li><a href="">Stay Connected</a></li>
+        <li><a href="">Work</a></li>
+        <li><a href="">Connected</a></li>
       </ul>
-
     </nav>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+
   </header>
 
-  <!--Hero Section-->
+<!--  Hero Section-->
   <main>
     <!--welcome Section-->
-    <section id="FirstPageHome">
-      <h1 id="Hello-Word">Hello it's me</h1>
-      <h1 id="My-name"><i>D Vishan Chathuranga </i><span id="-id">|</span></h1>
-      <h2 id="i-am-Developer">And I am passionate <span id="developer">Software Developer</span> / <span
-        id="developer2">Web Developer</span></h2>
-      <button id="Download-Cv">Download CV</button>
+    <section class="st_page">
+     <div  class="hero-text">
+       <h1 id="Hello-Word">Hello it's me</h1>
+       <h1 id="My-name">D Vishan Chathuranga </h1>
+       <h2 id="i-am-Developer">And I am passionate <span id="developer">Software Developer</span> & <span
+         id="developer2">Web Developer</span></h2>
+      <a href="#" class="CV">Download CV</a>
+       <a href="#" class="Talk">Talk with me....</a>
+     </div>
 
+      <div>
+        <img class="hero-img" src="/Asset/Image/MKQSE7497.JPG" width="500" height="650" style="border-radius: 90px">
+      </div>
     </section>
 
+    <div class="Scroll-down">
+      <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+    </div>
 
   </main>
 
 </section>
+
+
 
 
 <section id="S7-Service">
@@ -75,17 +101,59 @@
     </div>
   </header>
   <main>
-    <section>
+    <section class="Service_class">
+     <!-- <div>
+        <div>
+          <h5><u>Software Development</u></h5>
+          <p>
+            As a committed software developer, I provide end-to-end software development services customized to
+            address the specific requirements of my clients. My skills encompass the design, development, and
+            maintenance of top-tier software applications that propel business growth and success.
+          </p>
+          <a class="button" href="#">Read More</a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h5><u>Software Development</u></h5>
+          <p>
+            As a committed software developer, I provide end-to-end software development services customized to
+            address the specific requirements of my clients. My skills encompass the design, development, and
+            maintenance of top-tier software applications that propel business growth and success.
+          </p>
+          <a class="button" href="#">Read More</a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h5><u> Project-Based Services</u></h5>
+          <p>
+            Do you desire a unique software solution constructed especially for your singular problems? Our
+            project-based services are aimed at creating such high-end customized software applications that will
+            transform your entire business. Generic solutions can lead to alternative ways of tackling a problem,
+            wastage of time and resources as well as creating an atmosphere of annoyance.
+          </p>
+          <a class="button" href="#">Read More</a>
+        </div>
+      </div>
+
+
+-->
       <div class="box">
         <div class="card">
           <img src="../Asset/Image/more.png" style="width: 2vw; height: auto;">
+          <br>
+          <br>
           <h5><u>Software Development</u></h5>
+          <br>
           <div class="pra">
             <p>
               As a committed software developer, I provide end-to-end software development services customized to
               address the specific requirements of my clients. My skills encompass the design, development, and
               maintenance of top-tier software applications that propel business growth and success.
             </p>
+            <br>
+            <br>
             <p style="text-align: center"></p>
             <a class="button" href="#">Read More</a>
           </div>
@@ -94,12 +162,21 @@
       <div class="box">
         <div class="card">
           <img src="../Asset/Image/user%20(1).png" style="width: 2vw; height: auto;">
+          <br>
+          <br>
+
           <h5><u>Specialized Services</u></h5>
           <div class="pra">
+            <br>
+
             <p>
               By providing these specialized services, I strive to deliver complete software development solutions that
               meet your unique business needs, driving success and growth in the digital landscape through innovative,
               reliable, and efficient software tailored to your goals. </p>
+            <br>
+            <br>
+            <br>
+
             <p style="text-align: center"></p>
             <a class="button" href="#">Read More</a>
           </div>
@@ -108,38 +185,65 @@
       <div class="box">
         <div id="card" class="card">
           <img src="../Asset/Image/bell.png" style="width: 2vw; height: auto;">
+          <br>
+          <br>
+
           <h5><u> Project-Based Services</u></h5>
+          <br>
+
           <div class="pra">
             <p>
-              Do you desire a unique software solution constructed especially for your singular problems? Our
-              project-based services are aimed at creating such high-end customized software applications that will
-              transform your entire business. Generic solutions can lead to alternative ways of tackling a problem,
-              wastage of time and resources as well as creating an atmosphere of annoyance.
+              Need a custom software solution? Our project-based services deliver high-end, tailored applications designed to transform your business. Avoid generic solutions that waste time and resources—let us create the perfect software to meet your unique needs.
             </p>
+            <br>
+            <br>
+            <br>
+            <br>
             <p style="text-align: center"></p>
             <a class="button" href="#">Read More</a>
           </div>
         </div>
       </div>
-
     </section>
   </main>
 </section>
 
-
 <!--About me section-->
-<br><br><br>
+
 <section id="S2-About-Me">
   <main>
-    <section id="About-Me-Section">
+    <section class="About-Me-Section">
+      <div>
+        <div>
+          <img  src="../Asset/Image/MKQSE7497.JPG" width="300" height="340">
+        </div>
+        <div>
+          <img  src="../Asset/Image/MKQSE7497.JPG" width="300" height="340">
+        </div>
+        <div>
+          <img  src="../Asset/Image/MKQSE7497.JPG" width="300" height="340">
+        </div>
+        <div>
+          <img  src="../Asset/Image/MKQSE7497.JPG" width="300" height="340">
+        </div>
 
-      <br>
-      <!--My Photo-->
+      </div>
+      <div>
+        <p>
+          My name is Danthanarayanage Vishan Chathuranga, a 21-year-old software engineering student at <strong>IJSE-Institute
+          of Software Engineering,</strong> where I am pursuing a Higher National Diploma in Software Engineering.
+        </p>
+        <p class="underline-animation">
+          🤘I am passionate about creating innovative solutions through web design and software development. With a strong foundation in both areas, I am dedicated to mastering the latest technologies and applying them to real-world challenges.🤠
+        </p>
+      </div>
+     <!-- <br>
+      &lt;!&ndash;My Photo&ndash;&gt;
       <div class="wrapper">
         <div class="container">
           <input type="radio" name="slide" id="c1">
           <label for="c1" class="card_2">
-            <!--   <img  src="../Asset/Image/MKQSE7497.JPG" width="1000" height="800">-->
+            &lt;!&ndash;   <img  src="../Asset/Image/MKQSE7497.JPG" width="1000" height="800">&ndash;&gt;
             <div class="row">
               <div class="icon">1</div>
               <div class="description">
@@ -151,7 +255,7 @@
 
           <input type="radio" name="slide" id="c2" checked>
           <label for="c2" class="card_2">
-            <!--   <img  src="../Asset/Image/V6.png" width="1000" height="800">-->
+            &lt;!&ndash;   <img  src="../Asset/Image/V6.png" width="1000" height="800">&ndash;&gt;
             <div class="row">
               <div class="icon">2</div>
               <div class="description">
@@ -163,7 +267,7 @@
 
           <input type="radio" name="slide" id="c3">
           <label for="c3" class="card_2">
-            <!--   <img  src="../Asset/Image/V9.png" width="1000" height="800">-->
+            &lt;!&ndash;   <img  src="../Asset/Image/V9.png" width="1000" height="800">&ndash;&gt;
             <div class="row">
               <div class="icon">3</div>
               <div class="description">
@@ -175,7 +279,7 @@
 
           <input type="radio" name="slide" id="c4">
           <label for="c4" class="card_2">
-            <!--<img  src="../Asset/Image/DSYO7145.JPG" width="1000" height="800">-->
+            &lt;!&ndash;<img  src="../Asset/Image/DSYO7145.JPG" width="1000" height="800">&ndash;&gt;
             <div class="row">
               <div class="icon">4</div>
               <div class="description">
@@ -187,7 +291,7 @@
 
           <input type="radio" name="slide" id="c5">
           <label for="c5" class="card_2">
-            <!--<img  src="../Asset/Image/DSYO7145.JPG" width="1000" height="800">-->
+            &lt;!&ndash;<img  src="../Asset/Image/DSYO7145.JPG" width="1000" height="800">&ndash;&gt;
             <div class="row">
               <div class="icon">5</div>
               <div class="description">
@@ -197,9 +301,9 @@
             </div>
           </label>
         </div>
-      </div>
+      </div>-->
       <!--My introduction-->
-      <div id="Detail">
+     <!-- <div id="Detail">
         <p>
           My name is Danthanarayanage Vishan Chathuranga, a 21-year-old software engineering student at <strong>IJSE-Institute
           of Software Engineering,</strong> where I am pursuing a Higher National Diploma in Software Engineering.
@@ -208,17 +312,17 @@
           🤘I am passionate about creating innovative solutions through web design and software development. With a strong foundation in both areas, I am dedicated to mastering the latest technologies and applying them to real-world challenges.🤠
         </p>
 
-
-      </div>
+      </div>-->
 
     </section>
   </main>
 </section>
 
 
+<!--
 <section id="S4-project">
 
-  <!--Project Section-->
+  &lt;!&ndash;Project Section&ndash;&gt;
 
   <main>
     <section class="container_2">
@@ -254,7 +358,7 @@
         </article>
 
       </div>
-    <!--  <div>
+    &lt;!&ndash;  <div>
       </div>
       <div>
         <h2>KD Aircon AC Management System</h2>
@@ -267,7 +371,7 @@
           <li>HTML</li>
           <li>JavaScript</li>
         </ul>
-      </div>-->
+      </div>&ndash;&gt;
     </section>
 
   </main>
@@ -315,7 +419,7 @@
 <section id="Get Contact">
   <main>
     <section>
-      <div><!--Header-->
+      <div>&lt;!&ndash;Header&ndash;&gt;
         Let´s start a project together!
       </div>
 
@@ -332,7 +436,7 @@
 </section>
 
 
-<!--
+&lt;!&ndash;
 
 <section id="S5 Talk with me">
 &lt;!&ndash;Talk with me&ndash;&gt;
@@ -348,11 +452,11 @@
     </section>
   </main>
 </section>
--->
+&ndash;&gt;
 
 
 <section id="S6 Contact">
-  <!--Contact Section-->
+  &lt;!&ndash;Contact Section&ndash;&gt;
   <main>
     <section>
       <div>
@@ -379,7 +483,7 @@
 
     <br>
     <section>
-      <!--email-->
+      &lt;!&ndash;email&ndash;&gt;
     </section>
 
     <section>
@@ -440,5 +544,6 @@
     Developed by Vishan Chathuranga
   </div>
 </footer>
+-->
 </body>
 </html>

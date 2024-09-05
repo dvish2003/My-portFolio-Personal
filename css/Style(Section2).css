@@ -1,14 +1,36 @@
 
 #S2-About-Me {
-  background: black;
-  color: white;
-  position: relative;
-  width: 90%;
-  height: 90vh;
-  left: 12vh;
-  top: -6vh;
+  background: linear-gradient(245.59deg, #133917 0%, #38703d 28.53%, #133917 75.52%);
+  width: 100%;
+  height: auto;
 }
 
+.About-Me-Section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7rem;
+}
+.About-Me-Section>div:nth-child(1){
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7rem;
+}
+.About-Me-Section>div:nth-child(2) {
+  background: #133917;
+  border-radius: 30px;
+  height: 64.4vh;
+  width: 58vh;
+  padding: 2.3vh 4.1vh;
+  position: relative;
+  right: 0;
+  top: 10.1vh;
+  font-size: 2.8vh;
+  box-shadow: #272727 10px 10px 10px;
+
+}
+
+
+/*
 
 .wrapper{
   width: 100%;
@@ -189,6 +211,7 @@ transform: translateY(-10px);
   top: 34vh;
   transition: transform 0.5s;
 }
+*/
 
 
 

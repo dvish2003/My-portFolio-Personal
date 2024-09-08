@@ -8,16 +8,17 @@
 .About-Me-Section{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 7rem;
-}
-.About-Me-Section>div:nth-child(1){
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  gap: 17rem;
 
-  gap: 7rem;
+}
+.About-Me-Section>div:nth-child(1) {
+  border: 1px solid black;
+  padding: 100px;
 }
 .About-Me-Section>div:nth-child(2) {
-  background: #133917;
+  color: white;
+  border: 0.2vh solid rgba(255, 255, 255, 0.2);
+  background: transparent;
   border-radius: 30px;
   height: 64.4vh;
   width: 58vh;
@@ -27,9 +28,47 @@
   top: 10.1vh;
   font-size: 2.8vh;
   box-shadow: #272727 10px 10px 10px;
-
+  font-weight: 270;
+}
+.About-Me-Section>div:nth-child(1)>div>img{
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+  /*
+  box-shadow: #272727 10px 10x 10px;
+  */
 }
 
+
+/*
+#S2-About-Me >main > .About-Me-Section > #Detail {
+  position: relative;
+  font-size: 3.5vh;
+}
+*/
+
+#S2-About-Me >main > .About-Me-Section > #Detail> p:nth-child(1) {
+  position: absolute;
+  top: 60px;
+  transition: transform 0.5s;
+}
+
+#S2-About-Me >main > .About-Me-Section > #Detail > p:nth-child(1):hover {
+  transform: translateY(-0.93vh);
+}
+
+#S2-About-Me >main > .About-Me-Section > #Detail > p:nth-child(2):hover {
+  transform: translateY(-0.93vh);
+}
+
+#S2-About-Me >main > .About-Me-Section > #Detail > p:nth-child(2) {
+  position: absolute;
+  top: 300px;
+  transition: transform 0.5s;
+}
+.Ijse{
+  color: antiquewhite;
+}
 
 /*
 

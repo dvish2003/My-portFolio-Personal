@@ -33,7 +33,7 @@
 .nav_list a{
   color: white;
   margin-left: 60px;
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: all .55s ease;
@@ -148,7 +148,7 @@ section:nth-child(1)>main>section:nth-child(1)>div:nth-child(1)>#i-am-Developer{
   top: 70px;
   display: inline-block;
   color: white;
-  background: #4d9559;
+  background: linear-gradient(245.59deg, #133917 0%, #38703d 28.53%, #133917 75.52%);;
   border: 1px solid transparent;
   padding: 12px 30px;
   line-height: 1.4;
@@ -164,12 +164,7 @@ section:nth-child(1)>main>section:nth-child(1)>div:nth-child(1)>#i-am-Developer{
   border: 1px solid white;
   transform: translateX(8px);
 }
-.hero-text a.Talk{
-  background: transparent;
-  border: 1px solid white;
-  position: relative;
-  left: 20px;
-}
+
 
 .Scroll-down{
   position: absolute;
@@ -178,67 +173,90 @@ section:nth-child(1)>main>section:nth-child(1)>div:nth-child(1)>#i-am-Developer{
 }
 
 .Scroll-down i{
-  display: block;
-  padding: 12px;
-  font-size: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
   color: white;
   background: #4d9559;
-  /*
-  border: 2px solid white;
-  */
-  border-radius: 100%;
-  transition: all .50s ease;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  font-size: 39px;
+  transition: all .7s ease;
+
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
-@media all and (max-width: 1535px){
-  header{
+@keyframes slide {
+0%{
+  transform: translateY(-5px);
+}
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-5px);
+  }
+}
+.Scroll-down i:hover{
+  background: transparent;
+  border: 1px solid #133917;
+}
+
+@media all and (max-width: 1535px) {
+  header {
     padding: 1px 3%;
     transition: .2s;
   }
-  .Scroll-down{
+  .Scroll-down {
     right: 3%;
     transition: .2s;
   }
 }
-@media all and (max-width: 1460px){
-  .st_page{
+
+@media all and (max-width: 1460px) {
+  .st_page {
     padding: 0 12%;
     transition: .2s;
   }
 }
+
 @media all and (max-width: 1340px) {
-.st_page img{
-  width: 500px;
-  height: auto;
-}
-  .hero-text>#Hello-Word{
+  .st_page img {
+    width: 500px;
+    height: auto;
+  }
+  .hero-text>#Hello-Word {
     font-size: 65px;
     margin: 0 0 30px;
   }
 }
 
 @media all and (max-width: 1195px) {
-  .st_page{
+  .st_page {
     padding: 0 3%;
     transition: .2s;
     height: 100%;
     gap: 7rem;
     grid-template-columns: 1fr;
   }
-  .hero-text{
+  .hero-text {
     padding-top: 115px;
   }
-  .hero-img{
+  .hero-img {
     width: 460px;
     height: auto;
   }
 }
 
 @media all and (max-width: 990px) {
-#menu-icon{
-  display: block;
-}
-  .nav_list{
+  #menu-icon {
+    display: block;
+  }
+  .nav_list {
     position: absolute;
     top: 100%;
     right: -100%;
@@ -250,24 +268,149 @@ section:nth-child(1)>main>section:nth-child(1)>div:nth-child(1)>#i-am-Developer{
     flex-direction: column;
     padding: 50px 20px;
     transition: all .55s ease;
-
   }
-  .nav_list a{
+  .nav_list a {
     display: block;
     margin-left: 0;
     margin: 5px 0;
   }
-  .nav_list.open{
+  .nav_list.open {
     right: 0;
   }
 }
+
 @media all and (max-width: 680px) {
-  .st_page img{
+  .st_page img {
     width: 100%;
     height: auto;
   }
 }
 
+@media all and (max-width: 425px) {
+  .st_page{
+    height: auto;
+    width: 100%;
+  }
+    .hero-text a{
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+  .hero-text>#Hello-Word {
+    font-size: 48px;
+    margin: 0 0 20px;
+  }
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 375px) {
+  main>section>.hero-text>#Hello-Word{
+    font-size: 46px;
+  }
+  .hero-text a{
+    font-size: 12px;
+    padding: 12px 24px;
+  }
+  .nav_list {
+    width: 280px;
+    padding: 40px 15px;
+  }
+  .nav_list a {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  main>section>.hero-text>#Hello-Word{
+    font-size: 42px;
+  }
+    .hero-text a{
+    font-size: 11px;
+    padding: 12px 21px;
+  }
+  #Hello-Word{
+    font-size: 36px;
+    margin: 0 0 15px;
+  }
+  .nav_list {
+    width: 260px;
+    padding: 30px 10px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .hero-img {
+    width: 400px;
+  }
+  .hero-text>#Hello-Word {
+    font-size: 55px;
+    margin-bottom: 25px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .st_page {
+    padding: 0 8%;
+  }
+  .hero-img {
+    width: 450px;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  .st_page {
+    padding: 0 10%;
+
+  }
+}
+/*@media all and (max-width: 1491px) {
+  .hero-text a{
+    font-size: 14px;
+    padding: 12px 22px;
+  }
+
+}
+@media all and (max-width: 1516px) {
+  .hero-text a{
+    font-size: 14px;
+    padding: 12px 22px;
+  }
+
+}
+@media all and (max-width: 1487px) {
+  .hero-text a{
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+}
+@media all and (max-width: 1476px) {
+  .hero-text a{
+    font-size: 14px;
+    padding: 12px 19px;
+  }
+}
+@media all and (max-width: 1463px) {
+  .hero-text a{
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+}
+@media all and (max-width: 1465px) {
+  .hero-text a{
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+}
+
+@media all and (max-width: 1489px) {
+  .hero-text a{
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+}*/
 /*
 
 .hero-text {

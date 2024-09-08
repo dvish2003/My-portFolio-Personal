@@ -39,7 +39,7 @@
   color: white;
   text-decoration: none;
   border: 0.2vh solid transparent;
-  font-weight: bold;
+  font-weight: 300;
   padding: 1vh 2.5vh;
   border-radius: 3.5vh;
   transition: .4s;
@@ -59,6 +59,12 @@ h5 {
   line-height: 3.1vh;
   margin-bottom: 2.9vh;
 }
+
+.Img{
+  width: 3.7vh;
+  height: auto;
+}
+
 @media all and (max-width: 1535px) {
   #S7-Service > header {
     font-size: 5.8vh;
@@ -101,7 +107,10 @@ h5 {
   }
 }
 @media all and (max-width: 680px) {
-  #S7-Service > header {
+  .box>div{
+    font-size: 10px;
+  }
+    #S7-Service > header {
     font-size: 3.8vh;
     position: relative;
     left: -10px;
